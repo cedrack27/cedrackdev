@@ -1,5 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #F5F0E8;
 }
 
 .hero {
@@ -56,6 +57,10 @@ body {
     width: 100%;
     display: block;
     border: 2px solid black;
+}
+
+.carte {
+    background-color: #F5F0E8;
 }
 
 #competences {
