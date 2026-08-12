@@ -30,7 +30,7 @@ body {
     height: 50px;
     background: #009a69;
     border-radius: 50%;
-    bottom: 30px;
+    bottom: -30px;
     left: 12%;
 }
 
