@@ -1,0 +1,132 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+    background: #F5F0E8;
+    border-bottom: 4px solid black;
+}
+
+.name {
+    font-family: "DynaPuff", sans-serif;
+}
+
+.circle-yellow {
+    width: 120px;
+    height: 120px;
+    background: #ffe817;
+    border-radius: 50%;
+    top: 30px;
+    right: 12%;
+}
+
+.text-orange {
+    color: #ff4011;
+}
+
+.circle-green {
+    width: 50px;
+    height: 50px;
+    background: #009a69;
+    border-radius: 50%;
+    bottom: 30px;
+    left: 12%;
+}
+
+.losange {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: #5c11ff;
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.image-container {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    border: 3px solid #111;
+    box-shadow: 15px 15px 0 #ffe817;
+}
+
+.image-container img {
+    width: 100%;
+    display: block;
+    border: 2px solid black;
+}
+
+#competences {
+    background-color: #0f0d0a;
+}
+
+.progress {
+    height: 5px;
+    background-color: #555555;
+    border-radius: 0;
+}
+
+.progress-bar {
+     border-radius: 0;
+}
+
+#apropos {
+    background-color: #2563FF;
+    border-bottom: 4px solid black;
+}
+
+.about {
+    position: relative;
+    min-height: 550px;
+    background: #2864f5;
+    overflow: hidden; /* empêche les formes de dépasser */
+}
+
+.circle {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+
+    top: -70px;
+    right: -70px;
+
+    background: rgba(180, 190, 200, 0.55);
+}
+
+.about-col {
+    border: 1px solid #6F95F7;
+    background-color: #356EFD;
+}
+
+.diamond {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: -45px;
+    left: 110px;
+    background: #5d57bd;
+    transform: rotate(25deg);
+}
+
+.email {
+    border: 2px solid black;
+}
+
+.contact-item {
+    border: 2px solid black;
+    box-shadow: 5px 5px 0 black;
+}
+.contact-link {
+    color: #555555;
+    font-size: 12px;
+}
+
+footer {
+    background-color: #0f0d0a;
+    padding: 10px;
+    font-size: 8px;
+    color: #555555;
+}
