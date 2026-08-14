@@ -47,7 +47,7 @@
         </nav>
     </header>
     <main>
-        <section class="hero position-relative overflow-hidden min-vh-100 py-4">
+        <section class="hero apparition position-relative overflow-hidden min-vh-100 py-4">
             <div class="circle-yellow position-absolute"></div>
             <div class="losange position-absolute"></div>
 
@@ -91,7 +91,7 @@
             </div>
 
         </section>
-        <section class="p-4" id="projets">
+        <section class="p-4 apparition" id="projets">
             <div class="container">
                 <h1 class="fw-bold pb-4">My Projects</h1>
                 <div class="row g-5">
@@ -125,7 +125,7 @@
                 </div>
             </div>
         </section>
-        <section class="p-4" id="competences">
+        <section class="p-4 apparition" id="competences">
             <div class="container">
                 <h1 class="fw-bold text-white mt-5">Skills</h1>
                 <div class="row mt-5 gx-5 pb-5 d-flex align-items-center">
@@ -188,7 +188,7 @@
                 </div>
             </div>
         </section>
-        <section class="about" id="apropos">
+        <section class="about apparition" id="apropos">
             <div class="circle"></div>
             <div class="diamond"></div>
 
@@ -226,7 +226,7 @@
                 </div>
             </div>
         </section>
-        <section id="contact">
+        <section class="apparition" id="contact">
             <div class="container py-4">
                 <h1 class="fw-bold fs-1">Let's<br> <span class="text-warning"><i>connect</i></span></h1>
                 <div class="row d-flex align-items-center">
@@ -244,22 +244,26 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
-                        <div class="col-12 contact-item p-2 mb-3 d-flex justify-content-between align-items-center">
-                            <Span>GitHub</Span>
-                            <sapn class="contact-link">@cedrack27</sapn>
+                        <div class="col-12 contact-item mb-3 d-flex justify-content-between align-items-center">
+                            <span class="p-2">GitHub</span>
+                            <a class="btn btn-dark contact-link" href="https://github.com/cedrack27">Go</a>
+
                         </div>
-                        <div class="col-12 contact-item p-2 mb-3 d-flex justify-content-between align-items-center">
-                            <Span>LinkedIn</Span>
-                            <sapn class="contact-link">Cédrack Espéro Kounasso</sapn>
+                        <div class="col-12 contact-item mb-3 d-flex justify-content-between align-items-center">
+                            <span class="p-2">LinkedIn</span>
+                            <a class="btn btn-dark contact-link"
+                                href="https://www.linkedin.com/in/cedrack-espero-ounasso/">Go</a>
+
                         </div>
-                        <div class="col-12 contact-item p-2 mb-3 d-flex justify-content-between align-items-center">
-                            <Span>Twitter /
-                                X</Span>
-                            <sapn class="contact-link">@cedrackkou</sapn>
+                        <div class="col-12 contact-item mb-3 d-flex justify-content-between align-items-center">
+                            <span class="p-2">Twitter / X</span>
+                            <a class="btn btn-dark contact-link" href="https://x.com/cedrackkou">Go</a>
+
                         </div>
-                        <div class="col-12 contact-item p-2 mb-3 d-flex justify-content-between align-items-center">
-                            <Span>WhatsApp</Span>
-                            <sapn class="contact-link">https://wa.me//+2290165883678</sapn>
+                        <div class="col-12 contact-item mb-3 d-flex justify-content-between align-items-center">
+                            <Span class="p-2">Watshapp</Span>
+                            <a class="btn btn-dark contact-link" href="https://wa.me//+2290165883678">Go</a>
+
                         </div>
                     </div>
                 </div>
@@ -291,6 +295,20 @@
             setTimeout(() => {
                 copyBtn.textContent = "Copy";
             }, 2000);
+        });
+
+        const elements = document.querySelectorAll(".apparition");
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        });
+
+        elements.forEach((element) => {
+            observer.observe(element);
         });
     </script>
 </body>
